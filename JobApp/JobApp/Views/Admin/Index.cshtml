@@ -1,0 +1,105 @@
+﻿@model IEnumerable<JobApp.Models.JobApplicationDTO>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreferredLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExpectedCTC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentCTC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NoticePeriod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ccharpexperience)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mssqlexperience)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dotnetexperience)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.devopsexperience)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contact)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PreferredLocation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExpectedCTC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CurrentCTC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NoticePeriod)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ccharpexperience)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mssqlexperience)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dotnetexperience)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.devopsexperience)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
