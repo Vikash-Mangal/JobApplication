@@ -11099,11 +11099,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SB-225 Vikash\\Other Test Project\\JobApp\\JobApp\\JobApp.csproj",
+      "projectUniqueName": "C:\\SB-225 Vikash\\Extra Projects\\Practical Assignment\\JobApp\\JobApp\\JobApp.csproj",
       "projectName": "JobApp",
-      "projectPath": "C:\\SB-225 Vikash\\Other Test Project\\JobApp\\JobApp\\JobApp.csproj",
+      "projectPath": "C:\\SB-225 Vikash\\Extra Projects\\Practical Assignment\\JobApp\\JobApp\\JobApp.csproj",
       "packagesPath": "C:\\Users\\StartBit Developer\\.nuget\\packages\\",
-      "outputPath": "C:\\SB-225 Vikash\\Other Test Project\\JobApp\\JobApp\\obj\\",
+      "outputPath": "C:\\SB-225 Vikash\\Extra Projects\\Practical Assignment\\JobApp\\JobApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\StartBit Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",

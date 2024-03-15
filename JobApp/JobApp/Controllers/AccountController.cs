@@ -50,7 +50,7 @@ namespace JobApp.Controllers
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
-            return RedirectToAction("Login");
+            return RedirectToAction("Create","JobApplication");
         }
 
         public IActionResult AccessDenied()
